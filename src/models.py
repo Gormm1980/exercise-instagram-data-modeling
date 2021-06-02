@@ -12,10 +12,10 @@ class User(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True)
     user_name = Column(String(250), nullable=False)
-    first_name = Column(String(25))
-    last_name = Column(String(25))
+    first_name = Column(String(30))
+    last_name = Column(String(30))
     description = Column (String(250))
-    email = Column (String(50), nullable=False)
+    email = Column (String(65), nullable=False)
 
 class Follow(Base) :
     __tablename__ = 'follow'
